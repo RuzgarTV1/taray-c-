@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruzgar Hunerel</title>
+    <HTA:APPLICATION 
+        ID="oHTA"
+        APPLICATIONNAME="Ruzgar Hunerel Tarafindan Mesaj"
+        BORDER="thin"
+        BORDERSTYLE="complex"
+        CAPTION="yes"
+        SHOWINTASKBAR="yes"
+        SINGLEINSTANCE="yes"
+        SYSMENU="yes"
+        WINDOWSTATE="normal">
+    <script type="text/javascript">
+        function showThankYouMessage() {
+            alert("Yuklediginiz Icin Tesekkurler. Uygulamayi Kullanabilirsiniz");
+            showWeeklyMessage();
+        }
+
+        function showWeeklyMessage() {
+            alert("Her Hafta En Az 4 Uygulama");
+        }
+
+        window.onload = function() {
+            showThankYouMessage();
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
