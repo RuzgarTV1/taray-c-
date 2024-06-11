@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata Kodu Tarayıcısı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hata Kodu Tarayıcısı</h1>
+    <p>Lütfen aşağıdan bir seçenek seçin:</p>
+    <button class="button" onclick="openGoogle()">Google</button>
+    <button class="button" onclick="openBing()">Bing</button>
+    <button class="button" onclick="openDuckDuckGo()">DuckDuckGo</button>
+    <button class="button" onclick="openChatGPT()">ChatGPT</button>
+
+    <script>
+        function openGoogle() {
+            window.location.href = "https://www.google.com";
+        }
+
+        function openBing() {
+            window.open("https://www.bing.com");
+        }
+
+        function openDuckDuckGo() {
+            window.location.href = "https://www.duckduckgo.com";
+        }
+
+        function openChatGPT() {
+            window.location.href = "https://chat.openai.com/";
+        }
+    </script>
+</body>
+</html>
